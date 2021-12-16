@@ -1,0 +1,26 @@
+@charset "utf-8";
+svg {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+rect {
+    stroke: red;
+    stroke-width: 10;
+    stroke-height: 10;
+    fill: transparent;
+    background-color: #eee;
+    stroke-dasharray: 630;
+    animation: stroke-ani 3s;
+}
+text {
+
+}
+@keyframes stroke-ani {
+    from {
+        stroke-dashoffset: 600;
+    }
+    to {
+        stroke-dashoffset: 0;
+    }
+}
